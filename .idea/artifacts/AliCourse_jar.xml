@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="AliCourse:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AliCourse_jar</output-path>
+    <root id="root">
+      <element id="archive" name="AliCourse.jar">
+        <element id="module-output" name="AliCourse" />
+      </element>
+      <element id="directory" name="libs" />
+    </root>
+  </artifact>
+</component>
