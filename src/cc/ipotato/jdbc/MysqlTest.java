@@ -1,7 +1,7 @@
 package cc.ipotato.jdbc;
 
 import java.sql.*;
-
+import com.mysql.jdbc.Driver;
 /**
  * Created by Hello on 2017/11/17.
  */
@@ -15,16 +15,16 @@ public class MysqlTest {
             e.printStackTrace();
         }
 
-        String url = "jdbc:mysql://10.108.157.14:3306/test_db";
+        String url = "jdbc:mysql://10.108.157.14:3306/test";
         Connection conn;
         try {
-            conn = DriverManager.getConnection(url, "haohao", "hello_1234");
+            conn = DriverManager.getConnection(url, "test", "hello_1234");
             Statement stmt = conn.createStatement();
             System.out.println("成功连接到数据库！");
             String sql = "select * from stu";
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()){
-                System.out.print(rs.getString(1) + " " + rs.getInt(2));
+                System.out.print(rs.getInt(1) + " " + rs.getString(2));
                 System.out.println();
             }
             rs.close();
