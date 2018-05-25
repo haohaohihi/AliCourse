@@ -1,4 +1,4 @@
-package cc.ipotato.jdbc;
+package cc.ipotato.jdbc.basic;
 
 import java.sql.*;
 

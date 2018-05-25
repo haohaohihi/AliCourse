@@ -1,4 +1,4 @@
-package cc.ipotato.jdbc;
+package cc.ipotato.jdbc.basic;
 
 /**
  * Created by haohao on 2018/5/25.
