@@ -1,5 +1,7 @@
 package cc.ipotato.jdbc.basic;
 
+import cc.ipotato.jdbc.beans.Sort;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
