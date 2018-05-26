@@ -48,7 +48,6 @@ public class QueryRunnerQueryDemo {
         QueryRunner qr = new QueryRunner();
         String sql = "SELECT * FROM sort where sid > ?";
         List<Object[]> result= qr.query(conn, sql, new ArrayListHandler(), 3);
-        DbUtils.closeQuietly(conn);
         for (Object[] objs: result) {
             for (Object obj: objs) {
                 System.out.print(obj + "  ");
